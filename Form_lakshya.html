@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya registration Form</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(60 163 101);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.inside{
+    /* padding: 5px 20px 15px 20px; */
+    border: 2px solid black;
+    background-color: #b0b0e1;
+    border-radius: 30px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.container{
+    background-color:rgb(230, 207, 177);
+    padding: 5px 20px 15px 20px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="address"],
+input[type="number"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    margin: 5px;
+}
+
+.button{
+    background-color: #b0b0e1;
+    border-radius: 15px;
+    cursor: pointer;    
+    width: 45%;
+    height: 39px;
+}
+
+.button:hover{
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <center>
+                <div class="inside">
+                    <h1>Lakshya Registration Form</h1>
+                </div>
+                    <hr>
+                    <h2>Contact information</h2>
+            </center>
+            
+            <p>
+                NAME : <input type="text" name="name" required>
+            </p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Gender : MALE <input type="radio" name="gender" id="male">   FEMALE <input type="radio" name="gender" id="female" required>
+                </p>
+                
+            </fieldset>
+            <p>
+                Mobile Number : <input type="number" required>
+            </p>
+            
+            <p>
+                Email : <input type="email" name="email" id="email" required>
+            </p>
+            
+            <p>
+                Event :
+                <select name="Event" id="">
+                    <option value="IT_quiz">IT_quiz</option>
+                    <option value="Debug_it">Debug_it</option>
+                    <option value="Insight_coding">Insight_coding</option>
+                    <option value="Web-o-thon">Web-o-thon</option>
+                    
+                </select>
+            </p>
+            
+            
+            
+            <p>
+                <center>
+                    <input type="submit" value="SUBMIT" class="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="RESET NOW" class="button">
+                </center>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

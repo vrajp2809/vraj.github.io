@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya 2023</title>
+    <style>
+        .head{
+            text-align: center;
+            background-color: antiquewhite;
+            height: 30px;
+            margin: 0px;
+            padding: 46px;
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+
+        body{
+            object-position: center;
+            background-color: #3985c0;
+        }
+
+        .button{
+            background-color: rgb(195, 186, 148);
+            border: 2px solid black;
+            height: 28px;
+            width: 213px;
+            border-radius: 30px;
+        }
+
+        .button:hover{
+            background-color: aqua;
+            color: black;
+        }
+
+        .img{
+            height: 225px;
+            width: 225px;
+            border: 5px solid brown;
+            border-radius: 30px;
+
+        }
+
+        .time{
+            height: 40px;
+            width: 40px;
+            background-color: azure;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="head">Lakshya 2023</h1>
+
+    <br><br><br>
+    <center>
+    <img src="https://www.knowafest.com/files/uploads/WhatsApp%20Image%202023-03-08%20at%2015.20.53-2023041708.jpeg" alt="" class="img">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="Form_lakshya.html" ">
+        <div class="button"> 
+            CLick here for registration
+        </div>
+        </a>
+
+    
+        <p id="demo"></p>
+
+        <script class="time">
+        
+        var countDownDate = new Date("May 1, 2023 15:37:25").getTime();
+        
+        
+        var x = setInterval(function() {
+        
+          
+          var now = new Date().getTime();
+        
+          
+          var distance = countDownDate - now;
+        
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</center>
+</body>
+</html>
